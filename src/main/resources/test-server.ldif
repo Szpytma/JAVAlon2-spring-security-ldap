@@ -14,6 +14,13 @@ objectclass: top
 objectclass: organizationalUnit
 ou: people
 
+dn: cn=sales,ou=groups,dc=springframework,dc=org
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: sales
+ou: sales
+uniqueMember: uid=salerro,ou=people,dc=springframework,dc=org
+
 dn: uid=developerro,ou=people,dc=springframework,dc=org
 objectclass: top
 objectclass: person
@@ -34,6 +41,16 @@ sn: Managerro
 uid: managerro
 userPassword: $2a$10$KvxPudrieuxpEgxw3e4yPOuYK59PgfQshx3RaVUTCpbKB82DC/0RC
 
+dn: uid=salerro,ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Random Sales
+sn: Salerro
+uid: salerro
+userPassword: $2a$10$KvxPudrieuxpEgxw3e4yPOuYK59PgfQshx3RaVUTCpbKB82DC/0RC
+
 
 dn: cn=developers,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -48,3 +65,5 @@ objectclass: groupOfUniqueNames
 cn: managers
 ou: manager
 uniqueMember: uid=managerro,ou=people,dc=springframework,dc=org
+
+

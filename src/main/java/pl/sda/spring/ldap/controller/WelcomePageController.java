@@ -20,4 +20,9 @@ public class WelcomePageController {
     public String managers() {
         return "Welcome to the page for managers only!";
     }
+
+    @GetMapping("/sales")
+    public String sales() {
+        return "Welcome to the page for sales only!";
+    }
 }
